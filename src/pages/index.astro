@@ -1,34 +1,25 @@
 ---
-//component script
+import Main from '../components/Main.svelte'
 const profilePicture = 'https://i.imgur.com/pS4cXVRb.jpg'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div class="container">
-			<img
-				class="profile__picture"
-				src={profilePicture}
-				alt="profile picture"
-				width="100px"
-				height="100px"
-			/>
+<Main>
+	<div class="container">
+		<img
+			class="profile__picture"
+			src={profilePicture}
+			alt="profile picture"
+			width="100px"
+			height="100px"
+		/>
 
-			<div class="profile__details">
-				<h1>Kyle</h1>
-				<h2>Character on popular series South Park</h2>
-				<p>One of the few characters who thinks before he talks.</p>
-			</div>
+		<div class="profile__details">
+			<h1>Kyle</h1>
+			<h2>Character on popular series South Park</h2>
+			<p>One of the few characters who thinks before he talks.</p>
 		</div>
-	</body>
-</html>
+	</div>
+</Main>
 
 <style>
 	.profile {
